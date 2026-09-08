@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Neatzy - Cleaning Services.Neatzy offers the best cleaning services in Salem, Tamil Nadu. We specialize in residential, commercial, office cleaning, deep cleaning, carpet cleaning, and move-in/move-out cleaning. Affordable, professional cleaning services near you.">
+    <!-- Meta Keywords for Various Possibilities -->
+    <meta name="keywords"
+        content="best cleaning services Salem, home cleaning Salem, commercial cleaning Salem, office cleaning Salem, deep cleaning Salem, move-in cleaning Salem, move-out cleaning Salem, carpet cleaning Salem, cleaning services near me, cleaning company in Salem, professional cleaning Salem, Neatzy cleaning services, top cleaning services in Salem, residential cleaning Salem Tamil Nadu, cleaning services Tamil Nadu, best home cleaning in Salem, affordable cleaning Salem, Neatzy cleaning, best cleaning services Dharmapuri, best cleaning services Coimbatore, best cleaning services Erode, home cleaning Dharmapuri, home cleaning Coimbatore, home cleaning Erode, commercial cleaning Dharmapuri, commercial cleaning Coimbatore, commercial cleaning Erode, office cleaning Dharmapuri, office cleaning Coimbatore, office cleaning Erode, deep cleaning Dharmapuri, deep cleaning Coimbatore, deep cleaning Erode, move-in cleaning Dharmapuri, move-in cleaning Coimbatore, move-in cleaning Erode, move-out cleaning Dharmapuri, move-out cleaning Coimbatore, move-out cleaning Erode, carpet cleaning Dharmapuri, carpet cleaning Coimbatore, carpet cleaning Erode, professional cleaning services Tamil Nadu, Neatzy cleaning services, top cleaning services Tamil Nadu">
+
+    <!-- ========== Page Title ========== -->
+    <title>Neatzy - Cleaning Services</title>
+
+    <!-- ========== Google Font: Open Sans ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/themify-icons.css" rel="stylesheet">
+    <link href="css/elegant-icons.css" rel="stylesheet">
+    <link href="css/flaticon-set.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootsnav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- ========== End Stylesheet ========== -->
+    <style>
+        /* Force Open Sans across whole site */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        a,
+        li,
+        div,
+        span,
+        input,
+        button,
+        .navbar,
+        .footer,
+        .banner-area,
+        .services-style-three,
+        .feature-style-three,
+        .about-style-three,
+        .appinment-forms,
+        .single-service,
+        .feature-service-item {
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif !important;
+        }
+
+        /* WhatsApp button */
+        .whatsapp-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-widget:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .whatsapp-widget img {
+            width: 40px;
+            height: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .whatsapp-widget {
+                width: 50px;
+                height: 50px;
+            }
+
+            .whatsapp-widget img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        /* ============================================================ */
+        /* NEW STYLING MATCHING SECOND SCREENSHOT (blue theme, clean cards) */
+        /* ============================================================ */
+
+        /* Specialized Services - matching the "Our Most Popular Cleaning Services" style */
+        #specialized-services .site-heading h4 {
+            color: #0d6efd;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        #specialized-services .site-heading h2 {
+            color: #0a1e3c;
+            font-weight: 700;
+        }
+
+        #specialized-services .site-heading .devider {
+            width: 50px;
+            height: 3px;
+            background: #0d6efd;
+            margin: 15px auto;
+            border-radius: 3px;
+        }
+
+        #specialized-services .site-heading p {
+            color: #5a6a7e;
+            font-size: 1rem;
+        }
+
+        /* Feature cards - matching the second screenshot style */
+        .feature-service-item {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 28px 22px 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            transition: 0.3s;
+            border: 1px solid #eef2f7;
+            height: 100%;
+            text-align: left;
+            position: relative;
+        }
+
+        .feature-service-item:hover {
+            box-shadow: 0 8px 30px rgba(13, 110, 253, 0.10);
+            border-color: #d0e0ff;
+            transform: translateY(-4px);
+        }
+
+        .feature-service-item .icon-wrap {
+            display: block;
+            margin-bottom: 14px;
+        }
+
+        .feature-service-item .icon-wrap i {
+            font-size: 1.8rem;
+            width: 50px;
+            height: 50px;
+            background: #eef3ff;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #0d6efd;
+            transition: 0.3s;
+        }
+
+        .feature-service-item:hover .icon-wrap i {
+            background: #0d6efd;
+            color: #fff;
+        }
+
+        .feature-service-item h5 {
+            font-weight: 700;
+            color: #0a1e3c;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .feature-service-item p {
+            color: #5a6a7e;
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+            line-height: 1.6;
+        }
+
+        .feature-service-item .price-tag {
+            font-weight: 700;
+            color: #0d6efd;
+            background: #eef3ff;
+            padding: 2px 14px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.85rem;
+        }
+
+        /* Pest Control - matching blue theme */
+        .pest-control-section {
+            background: #f0f5ff;
+            border-radius: 12px;
+            padding: 40px 35px;
+            margin: 15px 0 25px;
+            border-left: 6px solid #0d6efd;
+            box-shadow: 0 2px 12px rgba(13, 110, 253, 0.06);
+            transition: 0.3s;
+        }
+
+        .pest-control-section:hover {
+            box-shadow: 0 8px 30px rgba(13, 110, 253, 0.10);
+        }
+
+        .pest-control-section h3 {
+            font-weight: 700;
+            color: #0a1e3c;
+            font-size: 1.5rem;
+        }
+
+        .pest-control-section .pest-icon i {
+            background: #eef3ff;
+            padding: 16px;
+            border-radius: 50%;
+            font-size: 2rem;
+            color: #0d6efd;
+            width: 64px;
+            height: 64px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+
+        .pest-control-section:hover .pest-icon i {
+            background: #0d6efd;
+            color: #fff;
+        }
+
+        .pest-badge {
+            background: #0d6efd;
+            color: #fff;
+            padding: 4px 16px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-left: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-pest {
+            background: #0d6efd;
+            border-color: #0d6efd;
+            color: #fff;
+            font-weight: 600;
+            padding: 10px 30px;
+            border-radius: 30px;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn-pest:hover {
+            background: #0b5ed7;
+            border-color: #0b5ed7;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(13, 110, 253, 0.25);
+        }
+
+        .bg-soft-gray {
+            background: #f8faff;
+        }
+
+        .section-padding-fix {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        /* Grid padding */
+        .service-grid-wrapper {
+            padding: 10px 5px;
+        }
+
+        .service-grid-wrapper .col-lg-4,
+        .service-grid-wrapper .col-md-6 {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .service-grid-wrapper {
+                padding: 5px 0;
+            }
+
+            .service-grid-wrapper .col-lg-4,
+            .service-grid-wrapper .col-md-6 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .pest-control-section {
+                padding: 25px 20px;
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TN4QRH7W0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8TN4QRH7W0');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div class="se-pre-con"></div>
+    <!-- Preloader Ends -->
+
+    <!-- Header -->
+    <header id="home">
+        <nav class="navbar navbar-default navbar-sticky dark bootsnav">
+            <div class="container-full">
+                <div class="row align-center">
+                    <div class="col-lg-3 brand-item">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-menu">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <img src="images/logo.png" class="logo" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                            <ul class="nav navbar-nav" data-in="#" data-out="#">
+                                <li><a href="#hero" class="smooth-menu">Home</a></li>
+                                <li><a class="smooth-menu" href="#services">Services</a></li>
+                                <li><a class="smooth-menu" href="#features">Features</a></li>
+                                <li><a class="smooth-menu" href="#about">About</a></li>
+                                <li><a class="smooth-menu" href="#hero">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="attr-nav">
+                            <div class="call">
+                                <div class="icon">
+                                    <img src="images/phone-call.png" alt="Phone">
+                                </div>
+                                <div class="info">
+                                    <span>Have any question?</span>
+                                    <h5>+91 8870121655</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Banner -->
+    <div id="hero" class="banner-area bg-cover shadow theme-hard text-light text-multi-weight"
+        style="background-image: url(images/19.jpg);">
+        <div class="banner-items">
+            <div class="box-table">
+                <div class="box-cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="content">
+                                    <h2 data-animation="animated slideInRight">Cleaning your <span>worries away</span>
+                                    </h2>
+                                    <p data-animation="animated slideInLeft">
+                                        We deliver spotless spaces, offering professional, reliable, and eco-friendly
+                                        cleaning services tailored to your needs.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="appinment-forms">
+                                    <h2>Free Estimate</h2>
+                                    <p>Get a quick response</p>
+                                    <form id="whatsappForm" class="contact-form">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input class="form-control" id="name" name="name" placeholder="Name"
+                                                        type="text">
+                                                    <span class="alert-error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <input class="form-control" id="phone" name="phone"
+                                                        placeholder="Phone" type="text">
+                                                    <span class="alert-error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <button class="btn-animation dark border" type="submit" name="submit"
+                                                    id="submit">
+                                                    <span>Get Estimate <i class="fas fa-angle-right"></i></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-bottom-center" style="background-image: url(images/32.png);"></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Services -->
+    <div id="services" class="services-style-three-area relative text-center default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="services-style-three col-lg-4 col-md-6">
+                    <div class="style-three-item item">
+                        <div class="shape" style="background-image: url(images/21.png);"></div>
+                        <div class="thumb"><img src="images/house.png" alt="Icon"></div>
+                        <h4><a href="#">Residential Cleaning</a></h4>
+                        <p>Experience top-notch cleaning for your home with Neatzy. We offer personalized, eco-friendly
+                            solutions with modern tools for a fresh, clean, and healthy living environment.</p>
+                    </div>
+                </div>
+                <div class="services-style-three col-lg-4 col-md-6">
+                    <div class="style-three-item item active">
+                        <div class="shape" style="background-image: url(images/21.png);"></div>
+                        <div class="thumb"><img src="images/cleaning-service.png" alt="Icon"></div>
+                        <h4><a href="#">Commercial Cleaning</a></h4>
+                        <p>Neatzy offers advanced, eco-friendly cleaning solutions for businesses, delivering a clean
+                            and professional environment</p>
+                    </div>
+                </div>
+                <div class="services-style-three col-lg-4 col-md-6">
+                    <div class="style-three-item item">
+                        <div class="shape" style="background-image: url(images/21.png);"></div>
+                        <div class="thumb"><img src="images/house.png" alt="Icon"></div>
+                        <h4><a href="#">Vehicles and Underground Sump Cleaning</a></h4>
+                        <p>We provide professional washing services for all kind of vehicles along with thorough
+                            underground sump cleaning, ensuring your vehicles and sump are spotless and well-maintained.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape-bottom" style="background-image: url(images/33.png);"></div>
+    </div>
+
+    <!-- Features (Popular Services) -->
+    <div id="features" class="features-area default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>What we do</h4>
+                        <h2>Our Most Popular <br> Cleaning Services For You</h2>
+                        <div class="devider"></div>
+                        <p>Discover our top cleaning services! From spotless homes and kitchens to fresh carpets and
+                            clear windows, we ensure cleanliness and comfort with precision and care.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="features-items">
+                <div class="row">
+                    <div class="feature-style-three col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="top">
+                                <i class="flaticon-house-1"></i>
+                                <h4><a href="#">House Cleaning</a></h4>
+                            </div>
+                            <p>Transform your home with professional cleaning services! From dusting to deep cleaning,
+                                we ensure every corner sparkles. Enjoy a fresh, spotless space. Book now for
+                                hassle-free, reliable, and efficient cleaning.</p>
+                        </div>
+                    </div>
+                    <div class="feature-style-three col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="top">
+                                <i class="flaticon-kitchen"></i>
+                                <h4><a href="#">Kitchen Cleaning</a></h4>
+                            </div>
+                            <p>Say goodbye to grease and grime! Our kitchen cleaning services tackle every corner –
+                                countertops, cabinets, appliances, and more. Enjoy a sparkling, hygienic kitchen. Book
+                                now for a spotless shine.</p>
+                        </div>
+                    </div>
+                    <div class="feature-style-three col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="top">
+                                <i class="flaticon-office-desk"></i>
+                                <h4><a href="#">Office Cleaning</a></h4>
+                            </div>
+                            <p>Boost productivity with our professional office cleaning services! We ensure spotless
+                                desks, sanitized spaces, and a fresh environment for your team. Book now for a cleaner,
+                                healthier workspace.</p>
+                        </div>
+                    </div>
+                    <div class="feature-style-three col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="top">
+                                <i class="flaticon-window-cleaning"></i>
+                                <h4><a href="#">Window Cleaning</a></h4>
+                            </div>
+                            <p>Let the sunshine in with our professional window cleaning! We ensure streak-free,
+                                crystal-clear windows for your home or office. Book now for a brighter, cleaner view.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature-style-three col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="top">
+                                <i class="flaticon-commercial-structures"></i>
+                                <h4><a href="#">Residential Cleaning</a></h4>
+                            </div>
+                            <p>Experience spotless living with our residential cleaning services! From bedrooms to
+                                living areas, we ensure every corner shines. Enjoy a fresh, tidy home. Book now for
+                                hassle-free cleaning.</p>
+                        </div>
+                    </div>
+                    <div class="feature-style-three col-lg-4 col-md-6">
+                        <div class="item">
+                            <div class="top">
+                                <i class="flaticon-carpet-1"></i>
+                                <h4><a href="#">Carpet Cleaning</a></h4>
+                            </div>
+                            <p>Revive your carpets with our deep cleaning services! We remove stains, odors, and dirt,
+                                leaving them fresh, soft, and like new. Book now for spotless, refreshed carpets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SPECIALIZED SERVICES - matching second screenshot style        -->
+    <!-- ============================================================ -->
+    <div id="specialized-services" class="features-area default-padding bg-soft-gray section-padding-fix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4>Premium Solutions</h4>
+                        <h2>Deep Cleaning &amp; <br> Specialized Services</h2>
+                        <div class="devider"></div>
+                        <p>From sofa and mattress deep cleaning to commercial hospitality – we cover every need with
+                            precision.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row service-grid-wrapper">
+                <!-- 1. Sofa & Mattress -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-service-item">
+                        <span class="icon-wrap"><i class="fas fa-couch"></i></span>
+                        <h5>Sofa &amp; Mattress Cleaning</h5>
+                        <p>Deep steam cleaning for sofas and mattresses. Removes dust mites, allergens, stains. Safe
+                            &amp; hygienic.</p>
+                    </div>
+                </div>
+                <!-- 2. Glass Facade -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-service-item">
+                        <span class="icon-wrap"><i class="fas fa-building"></i></span>
+                        <h5>Glass Facade Cleaning</h5>
+                        <p><span class="price-tag">₹16/sq.ft</span> (front &amp; back). Sparkling, streak-free glass for
+                            offices and commercial buildings.</p>
+                    </div>
+                </div>
+                <!-- 3. Move-In/Out -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-service-item">
+                        <span class="icon-wrap"><i class="fas fa-truck-moving"></i></span>
+                        <h5>Move-In / Move-Out Cleaning</h5>
+                        <p>Thorough cleaning for vacant or occupied homes. Perfect for tenants and landlords.</p>
+                    </div>
+                </div>
+                <!-- 4. Post Construction -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-service-item">
+                        <span class="icon-wrap"><i class="fas fa-hard-hat"></i></span>
+                        <h5>Post Construction Cleaning</h5>
+                        <p>Remove dust, debris, and residue after renovation or new build. Ready-to-use spaces.</p>
+                    </div>
+                </div>
+                <!-- 5. Commercial Hospitality -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-service-item">
+                        <span class="icon-wrap"><i class="fas fa-hotel"></i></span>
+                        <h5>Commercial Hospitality Cleaning</h5>
+                        <p>Specialized cleaning for hotels, resorts, and restaurants. High standards, guest-ready.</p>
+                    </div>
+                </div>
+                <!-- 6. 2BHK/3BHK/Duplex -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-service-item">
+                        <span class="icon-wrap"><i class="fas fa-home"></i></span>
+                        <h5>2BHK / 3BHK / Duplex Cleaning</h5>
+                        <p>Custom deep cleaning for apartments and duplex homes. Occupied or empty, we handle it all.
+                        </p>
+                    </div>
+                </div>
+                <!-- 7. Floor Heavy Deep Cleaning -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-service-item">
+                        <span class="icon-wrap"><i class="fas fa-broom"></i></span>
+                        <h5>Floor Heavy Deep Cleaning</h5>
+                        <p><span class="price-tag">₹8/sq.ft</span> – Single Disc 45kg scrubber cleaning. Deep grime
+                            removal, polished finish.</p>
+                    </div>
+                </div>
+                <!-- 8. Restroom Deep Cleaning -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-service-item">
+                        <span class="icon-wrap"><i class="fas fa-restroom"></i></span>
+                        <h5>Restroom Deep Cleaning</h5>
+                        <p><span class="price-tag">Starting from ₹1100</span>. Sanitization, descaling, odor removal,
+                            and shine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- PEST CONTROL SECTION (separate, blue theme)                    -->
+    <!-- ============================================================ -->
+    <div id="pest-control" class="features-area default-padding" style="background: #ffffff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="pest-control-section">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 text-center">
+                                <span class="pest-icon"><i class="fas fa-shield-alt"></i></span>
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Pest Control Services <span class="pest-badge">Safe &amp; Effective</span></h3>
+                                <p style="font-size: 1rem; color: #3d4f6a; font-weight: 500; margin-bottom: 0;">
+                                    Comprehensive pest control for homes and offices. Termite, cockroach, mosquito, and
+                                    rodent control with eco-friendly methods. Protect your space from unwanted guests.
+                                </p>
+                            </div>
+                            <div class="col-md-3 text-md-end text-center mt-3 mt-md-0">
+                                <a href="#hero" class="btn-pest">Get Free Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="about-style-two-area bg-gray default-padding">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-lg-6 about-style-two">
+                    <div class="thumb">
+                        <img src="images/11.jpg" alt="Thumb">
+                        <img src="images/12.jpg" alt="Thumb">
+                        <div class="fun-fact">
+                            <div class="counter">
+                                <div class="timer" data-to="15" data-speed="1000">14</div>
+                                <div class="operator">+</div>
+                            </div>
+                            <span class="medium">Team Member</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 about-style-three">
+                    <h4 class="sub-heading">Why Choose Neatzy?</h4>
+                    <h2 class="heading">We are committed to give <br> our best services</h2>
+                    <p>At Neatzy, we believe a clean space is the foundation of a happy life. Our expert team uses
+                        eco-friendly products and modern techniques to ensure every corner shines. Whether it's your
+                        cozy home or bustling office, we're here to make cleaning effortless for you.</p>
+                    <ul>
+                        <li>Experienced professionals</li>
+                        <li>Information for Any Services</li>
+                        <li>Service Monitoring</li>
+                        <li>Fast Communication</li>
+                        <li>Flexible scheduling</li>
+                        <li>Eco-friendly solutions</li>
+                    </ul>
+                    <a class="btn btn-theme primary effect btn-md" href="#">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-theme text-light">
+        <div class="animate-illustration">
+            <img src="images/2.png" alt="illustration">
+        </div>
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 item">
+                        <div class="f-item about">
+                            <img src="images/logo-light.png" alt="Logo">
+                            <p>At Neatzy, we believe that a clean space is more than just appearances—it's the
+                                foundation for a healthier, more productive lifestyle. From sparkling homes to pristine
+                                offices, we provide advanced cleaning solutions tailored to your unique needs. With a
+                                commitment to eco-friendly practices and cutting-edge techniques, we ensure every corner
+                                shines with perfection.</p>
+                            <a
+                                href="mailto:neatzyservices@gmail.com?subject=Service%20Inquiry&body=Hello,%20I%20would%20like%20to%20know%20more%20about%20your%20services.">Send
+                                Email</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 item">
+                        <div class="f-item contact-widget">
+                            <h4 class="widget-title">Contact Info</h4>
+                            <div class="address">
+                                <ul>
+                                    <li>Salem, Tamilnadu</li>
+                                    <li>
+                                        <div class="icon"><i class="fas fa-clock"></i></div>
+                                        <div class="content"><strong>Opening Hours:</strong> 8:00 AM – 6:00 PM</div>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><i class="fas fa-phone"></i></div>
+                                        <div class="content"><strong>Phone:</strong> <a href="tel:+918870121655">+91
+                                                8870121655</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="content">
+                                            <p>Follow Us on Instagram: <a href="https://instagram.com/neatzy.in"
+                                                    target="_blank">@Neatzy</a></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-box">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>© Copyright 2025. All Rights Reserved by <a
+                                    href="https://craftofurl.github.io/Craftofurl/">craftofurl</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-shape-left">
+            <img src="images/5.png" alt="Shape">
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/modernizr.custom.13711.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/progress-bar.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/count-to.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/YTPlayer.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/bootsnav.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- WhatsApp Floating Widget -->
+    <a href="https://wa.me/918870121655?text=Hello!%20I'm%20interested%20in%20your%20cleaning%20services.%20Could%20you%20please%20provide%20more%20details%3F"
+        class="whatsapp-widget" target="_blank" aria-label="Chat with us on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script>
+        document.getElementById("whatsappForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const whatsappNumber = "+918870121655";
+            const message = `Hello! My name is ${name} and my phone number is ${phone}. I would like to know more about your services.`;
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, "_blank");
+        });
+    </script>
+
+</body>
+
+</html>
